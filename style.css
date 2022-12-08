@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.wrapper{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    /* background-image: url('./images/slide1.jpg'); */
+    /* background-image: url('./images/slide2.jpg'); */
+}
+
+/* .mp4{
+    position: absolute;
+    width: 300px;
+    height: 168px;
+} */
+.video-controls{
+    position: absolute;
+    bottom: 1px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn{
+    border: none;
+    color: black;
+  }
+
+  .toggle{
+    position: absolute;
+    top: -110px;
+    left: 0;
+    color: white;
+    background-color: transparent;
+    border: none;
+    z-index: 1111;
+  }
+
+  .sound{
+    position: absolute;
+    top: -110px;
+    left: 272px;
+    z-index: 1111;
+    color: white;
+    background-color: transparent;
+    border: none;
+    z-index: 1111;
+  }
+
+.bottom{
+    position: absolute;
+    width: 300px;
+    height: 82px;
+    top: 169px;
+}
+.logo{
+    position: absolute;
+    width: 144px;
+    height: 32px;
+    top: 192px;
+    left: 13px;
+}
+.bg{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+}
+.logo2{
+    position: absolute;
+    width: 144px;
+    height: 32px;
+    top: 12px;
+    left: 13px;
+}
+.tab{
+    position: absolute;
+    width: 144px;
+    height: 32px;
+    top: 195px;
+    left: 190px;
+}
+.close{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    left: 271px;
+}
+.bcarone{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 79px;
+    left: 35px;
+}
+.bcartwo{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 73px;
+    left: 30px;
+}
+
+.bcarthree{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 71px;
+    left: 29px;
+}
+.carpackages_small{
+    position: relative;
+    width: 77px;
+    height: 37px;
+}
+.c_one{
+    position: absolute;
+    width: 77px;
+    height: 37px;
+    top: 202px;
+    left: 112px;
+    opacity: 1;
+}
+.c_two{
+    position: absolute;
+    width: 77px;
+    height: 35px;
+    top: 202px;
+    left: 13px;
+    opacity: .4;
+}
+.c_three{
+    position: absolute;
+    width: 77px;
+    height: 37px;
+    top: 202px;
+    left: 209px;
+    opacity: .7;
+}
+
+.pluse{
+    animation: pluse 2s ease infinite;
+}
+
+@keyframes pluse{
+    50%{
+        transform: scale(.96);
+    }
+}
+
+
+.flash{
+    animation: flash 1s ease-in forwards;
+}
+@keyframes flash {
+    0%, 25%, 45%{
+       opacity: .7;
+    }
+    50%, 75%, 100%  {
+       opacity: 1;
+    }
+}
+ 
+
+.fadeIn{
+    animation: fadeIn 1s ease-in forwards;
+ }
+
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+ }
+ .fadeOut{
+    animation: fadeOut 1s ease-in forwards;
+}
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0.4;} 
+     }
+
+.lefttorightanimation{
+    animation: lefttorightanimation 1s both;
+}
+
+@keyframes lefttorightanimation{
+    from{
+        left: -226px;
+    }
+    to{
+        left: 35px;
+    }
+}
+.bounceIn{
+    animation: bounceIn 1s ease-in forwards infinite;
+}
+@keyframes bounceIn {
+    0% { 
+       opacity: .4; 
+       transform: scale(.3);
+    }
+    50% { 
+       opacity: .4;
+       transform: scale(1.05);
+    }
+    70% {
+       transform: scale(.9);
+    }
+    100% {
+       transform: scale(1);
+    }
+ }
